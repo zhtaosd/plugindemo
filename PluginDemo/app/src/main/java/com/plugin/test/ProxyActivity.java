@@ -47,8 +47,8 @@ public class ProxyActivity extends Activity {
     public void startActivity(Intent intent) {
         String className1 = intent.getStringExtra("className");
         Intent intent1 = new Intent(this,ProxyActivity.class);
-        intent1.putExtra("calssName",className1);
-        super.startActivity(intent);
+        intent1.putExtra("className",className1);
+        super.startActivity(intent1);
     }
 
     @Override
