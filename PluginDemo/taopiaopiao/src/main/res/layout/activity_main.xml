@@ -4,6 +4,13 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/sendBroad"
+        android:text="发送广播"
+        />
 
     <ImageView
         android:id="@+id/img"

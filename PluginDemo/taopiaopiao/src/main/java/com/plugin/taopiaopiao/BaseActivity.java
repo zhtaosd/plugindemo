@@ -1,8 +1,10 @@
 package com.plugin.taopiaopiao;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -41,6 +43,18 @@ public class BaseActivity extends Activity implements PayInterfaceActivity {
        Intent m = new Intent();
        m.putExtra("serviceName",service.getComponent().getClassName());
        return that.startService(m);
+    }
+
+    @Override
+    public void sendBroadcast(Intent intent) {
+        that.sendBroadcast(intent);
+    }
+
+
+    @Override
+    public Intent registerReceiver(BroadcastReceiver receiver, IntentFilter filter) {
+
+        return that.registerReceiver(receiver, filter);
     }
 
     @Override
