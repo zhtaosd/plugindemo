@@ -16,6 +16,7 @@ public class MainActivity extends BaseActivity {
             public void onClick(View view) {
                 Toast.makeText(that,"-------->",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(that,SecondActivity.class));
+                startService(new Intent(that, OneService.class));
             }
         });
     }

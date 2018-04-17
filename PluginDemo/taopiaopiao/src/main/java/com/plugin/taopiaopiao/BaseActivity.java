@@ -39,7 +39,7 @@ public class BaseActivity extends Activity implements PayInterfaceActivity {
     @Override
     public ComponentName startService(Intent service) {
        Intent m = new Intent();
-       m.putExtra("servicename",service.getComponent().getClassName());
+       m.putExtra("serviceName",service.getComponent().getClassName());
        return that.startService(m);
     }
 
@@ -67,6 +67,8 @@ public class BaseActivity extends Activity implements PayInterfaceActivity {
         m.putExtra("className",intent.getComponent().getClassName());
         that.startActivity(m);
     }
+
+
 
     @NonNull
     @Override

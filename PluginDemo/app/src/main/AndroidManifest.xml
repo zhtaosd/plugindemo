@@ -22,6 +22,8 @@
 
         <activity android:name=".ProxyActivity">
         </activity>
+        <service android:name=".ProxyService" >
+        </service>
     </application>
 
 </manifest>
